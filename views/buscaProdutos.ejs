@@ -1,0 +1,16 @@
+<%- include ("topo") %>
+
+<p>Pesquise por livros, filmes, ou séries; Não esqueça de preencher o valor máximo;</p>
+
+<form action='/produtos' method='post'>
+    Nome do Produto:<br>
+     <input type='text' name='nomeFiltro' id='nomeFiltro'>
+    <br>
+    Marca do Produto:<br>
+     <input type='text' name='marcaFiltro' id='marcaFiltro'>
+    <br>
+    Preço Máximo:<br> <input type='text' name='precoMaximo' id='precoMaximo'><br>
+    
+    <br> <input type='submit' value='Enviar'>
+</form>
+<%- include("rodape") %>
